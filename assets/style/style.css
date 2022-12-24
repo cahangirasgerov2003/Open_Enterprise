@@ -14,6 +14,8 @@ header {
   align-items: center;
   position: fixed;
   border-bottom: 1px solid rgba(190, 189, 189, 0.678);
+  background-color: #fff;
+  z-index: 999;
 }
 .logo-content {
   margin-left: 31px;
@@ -67,19 +69,24 @@ nav li:last-child a:hover {
   color: #fff;
   background-color: var(--colorMainGreen);
 }
-.main {
+.div-main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
 }
-.firstsection {
+main .first-child {
   height: 248px;
   width: 40%;
+  margin: 265px 0 49px 56px;
+}
+main .last-child {
+  width: 55%;
+  height: 570px;
 }
 .leftSection {
-  margin: 265px 12px 49px 56px;
+  height: 248px;
   width: 100%;
+  padding-right: 12px;
 }
 .title {
   width: 100%;
@@ -99,15 +106,14 @@ nav li:last-child a:hover {
   letter-spacing: -2%;
   font-family: var(--colorSecondFont);
 }
-.secondsection {
-  height: 570px;
-}
 .imageSection {
+  height: 570px;
+  width: 100%;
   margin: 176px 12px 49px 0;
   filter: grayscale(20%);
 }
 .imageSection img {
-  height: 570px;
+  width: 100%;
   object-fit: cover;
 }
 .button {
