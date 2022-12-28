@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
 }
-body,
-body a {
+body {
   color: var(--colorMainBlack);
+  background-color: #fff;
   width: 100%;
 }
 header {
@@ -14,7 +14,6 @@ header {
   align-items: center;
   position: fixed;
   border-bottom: 1px solid rgba(190, 189, 189, 0.678);
-  background-color: #fff;
   z-index: 999;
 }
 .logo-content {
@@ -31,67 +30,68 @@ header {
   letter-spacing: -4%;
   font-family: var(--colorSecondFont);
 }
-nav {
+.navbar {
   margin-right: 33px;
 }
-nav ul {
+.navbar ul {
   display: flex;
 }
-nav li {
+.navbar li {
   font-size: 18px;
   letter-spacing: -2%;
   font-weight: 700;
   font-family: var(--colorMainFont);
 }
-nav li:not(:first-child) {
+.navbar li:not(:first-child) {
   margin-left: 40px;
 }
-nav li:first-child {
+.navbar li:first-child {
   font-family: var(--colorSecondFont);
 }
-nav li:last-child {
+.navbar li:last-child {
   font-weight: 900;
   font-family: var(--colorMainFont);
 }
-nav li a {
+.navbar li a {
+  color: var(--colorMainBlack);
   padding: 10px;
   transition-property: color;
   transition-duration: 1s;
   transition-timing-function: linear;
 }
-nav li:last-child a {
+.navbar li:last-child a {
   color: var(--colorMainGreen);
 }
-nav li a:hover {
+.navbar li a:hover {
   color: var(--colorMainGreen);
 }
-nav li:last-child a:hover {
+.navbar li:last-child a:hover {
   color: #fff;
   background-color: var(--colorMainGreen);
 }
-main .div-main {
+.main .div-main {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 .first-child {
   height: 248px;
-  width: 40%;
+  width: 45%;
   margin: 265px 0 0 56px;
 }
-.last-child{
+.last-child {
   height: 570px;
-  width:60%;
+  width: 55%;
 }
 .leftSection {
-  height: 248px;
+  height: 100%;
   width: 100%;
   padding-right: 12px;
 }
 .title {
   width: 100%;
   margin-bottom: 24px;
-  font-size: 58px;
+  font-size: 70px;
   line-height: 80px;
   font-weight: 700;
   font-family: var(--colorMainFont);
@@ -101,7 +101,7 @@ main .div-main {
   width: 100%;
   color: #66645e;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 24px;
   line-height: 32px;
   letter-spacing: -2%;
   font-family: var(--colorSecondFont);
@@ -109,11 +109,12 @@ main .div-main {
 .imageSection {
   width: 100%;
   height: 570px;
-  margin: 176px 12px 49px 0;
-  filter: grayscale(20%);
+  margin-top: 176px;
+  filter: contrast(110%);
 }
 .imageSection img {
- width: 100%;
+  width: 100%;
+  padding-right: 13px;
 }
 .button {
   width: 219px;
@@ -121,12 +122,16 @@ main .div-main {
   margin-left: 56px;
   margin-top: 49px;
   border-radius: 8px;
-  padding: 20px 24px 20px 24px;
+  padding: 20px 24px;
   background-color: var(--colorMainGreen);
   color: #ffff;
   font-size: 16px;
   font-weight: 400;
   font-family: var(--colorSecondFont);
   cursor: pointer;
-  box-shadow: 0 0 20px 1px var(--colorMainGreen);
+  box-shadow: 0 0 10px 0.5px var(--colorMainGreen);
+  transition: transform 1s linear;
+}
+.button:hover {
+  transform: scale(0.95, 0.95);
 }
