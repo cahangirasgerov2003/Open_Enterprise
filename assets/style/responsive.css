@@ -1,0 +1,59 @@
+@media screen and (max-width: 360px) {
+  header {
+    border-bottom: 0;
+  }
+  .content {
+    display: none;
+  }
+  .navbar {
+    margin-right: px;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .logo-content {
+    margin-left: 36px;
+  }
+  .navbar span {
+    display: block;
+    margin-right: 0px;
+    margin-left: 181px;
+    cursor: pointer;
+  }
+  .main .div-main {
+    flex-direction: column-reverse;
+  }
+  .first-child {
+    width: 291px;
+    height: 235px;
+    margin: 0 33px 47px 36px;
+  }
+  .last-child {
+    width: 290.86px;
+    height: 228.88px;
+    margin: 115.32px 29.3px 28.11px 39.84px;
+  }
+  .leftSection {
+    padding-right: 0;
+  }
+  .title {
+    width: 276px;
+    margin: 0 7.5px 24px 7.5px;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .description {
+    font-size: 18px;
+    text-align: center;
+  }
+  .imageSection {
+    margin-top: 0;
+  }
+  .imageSection img {
+    padding: 0;
+  }
+  .button {
+    margin: 0 68px 47px 73px;
+  }
+}
