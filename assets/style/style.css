@@ -139,3 +139,93 @@ header {
 .navbar span {
   display: none;
 }
+.section1 {
+  width: 100%;
+  height: 454px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.section1-title {
+  width: 60%;
+  height: 64px;
+}
+.section1-description {
+  width: 70%;
+  height: 52px;
+  margin-top: 24px;
+}
+.section1-description p,
+.section1-title p {
+  text-align: center;
+  font-weight: 400;
+  font-family: var(--colorSecondFont);
+  color: var(--colorMainBlack);
+}
+.section1-title p {
+  font-weight: 900;
+  font-size: 48px;
+}
+.section1-description p {
+  font-size: 18px;
+  line-height: 26px;
+}
+.card-container {
+  margin: 0 56px 193px 56px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ellipse-card,
+.polygon-card {
+  margin-right: 23px;
+}
+.ellipse-card,
+.polygon-card,
+.star-card {
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+  align-items: center;
+  height: 340px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+.card-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 64px 0 24px 0;
+}
+.card-image img {
+  width: 104px;
+}
+.card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 32px;
+}
+.card-title p {
+  font-size: 24px;
+  color: var(--colorMainGreen);
+  font-weight: 700;
+  font-family: var(--colorMainFont);
+}
+.card-description {
+  width: 94%;
+  height: 60px;
+  margin-top: 25px;
+}
+.card-description p {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--colorMainGreen);
+  font-weight: 400;
+  font-family: var(--colorSecondFont);
+  text-align: center;
+}
