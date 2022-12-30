@@ -229,3 +229,81 @@ header {
   font-family: var(--colorSecondFont);
   text-align: center;
 }
+.section3{
+  display: flex;
+  width: 100%;
+}
+.feature-info{
+  width: 60%;
+  color: var(--colorMainBlack);
+  margin: 0 138px 193px 56px ;
+}
+.members-widget{
+  width: 40%;
+  height: 450px;
+  margin-right: 118px;
+  border: 4px solid var(--colorMainBlack);
+  border-radius: 16px;
+}
+.polell-title{
+  width: 100%;
+  height: 128px;
+  margin: 24px 0;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 700;
+  font-family: var(--colorMainFont);
+}
+.polell-description{
+  width: 100%;
+  height: 78px;
+  line-height: 26px;
+  letter-spacing: -2%;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--colorSecondFont);
+}
+.members-title{
+  margin: 32px 0 28px 40px;
+  width: 131px;
+  height: 40px;
+  font-weight: 700;
+  font-family: var(--colorSecondFont);
+  line-height: 40px;
+  letter-spacing: -2%;
+  font-size: 32px;
+}
+.Dillon, .Anna, .Kas{
+  display: flex;
+  align-items: center;
+  width: 72px;
+  margin: 28px 16px 0 40px;
+}
+.Dillon img, .Anna img, .Kas img{
+  border-radius: 36px;
+  margin-right: 12px;
+}
+.user-info{
+  width: 200px;
+  height: 56px;
+}
+.user-name{
+  width: 200px;
+  height: 26px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-family: var(--colorMainFont);
+  line-height: 26px;
+  letter-spacing: -2%;
+  font-size: 24px;
+
+}
+.user-shares{
+  width: 200px;
+  height: 24px;
+  font-weight: 400;
+  font-family: var(--colorSecondFont);
+  line-height: 26px;
+  letter-spacing: -2%;
+  font-size: 16px;
+}
