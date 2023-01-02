@@ -1,12 +1,17 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1118px) {
+  .content {
+    display: none;
+  }
+  .button {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 865px) {
   header {
     border-bottom: 0;
   }
   .content {
     display: none;
-  }
-  .navbar {
-    margin-right: px;
   }
   .navbar ul {
     display: none;
@@ -55,5 +60,8 @@
   }
   .button {
     margin: 0 68px 47px 73px;
+  }
+  .button ~ section {
+    display: none;
   }
 }
