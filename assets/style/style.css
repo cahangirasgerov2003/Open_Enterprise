@@ -408,6 +408,15 @@ header {
   border: none;
   margin-bottom: 16px;
   cursor: pointer;
+  animation: share 2s linear 0.5s infinite alternate;
+}
+@keyframes share {
+  to {
+    background-color: var(--colorMainGreen);
+  }
+  from {
+    background-color: brown;
+  }
 }
 .top-description {
   width: 85%;
@@ -490,4 +499,193 @@ header {
   background-color: var(--colorMainBlack);
   color: #fff;
   line-height: 20px;
+  animation: view 2s linear 0.5s infinite alternate;
+  cursor: pointer;
+}
+@keyframes view {
+  to {
+    background-color: var(--colorMainBlack);
+  }
+  from {
+    background-color: rgb(157, 99, 185);
+  }
+}
+.section6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.help-title {
+  width: 70%;
+  font: 900 48px var(--colorMainFont);
+  color: var(--colorMainBlack);
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.help-description {
+  width: 70%;
+  font: 400 18px var(--colorSecondFont);
+  color: var(--colorMainBlack);
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.help-boxs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 52px 0 52px;
+}
+.tutorial-video,
+.updating {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(27, 25, 25, 0.418);
+  border-radius: 16px;
+  margin: 0 1%;
+  margin-bottom: 64px;
+}
+.boxs-title {
+  font: 700 22px var(--colorMainFont);
+  color: var(--colorMainBlack);
+  line-height: 24px;
+  margin: 24px 24px 16px 24px;
+}
+.boxs-description {
+  font: 400 16px var(--colorSecondFont);
+  color: var(--colorMainBlack);
+  line-height: 24px;
+  margin: 0 24px 18px 24px;
+}
+.boxs-button {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 24px 28px 24px;
+}
+.boxs-button button {
+  cursor: pointer;
+  background-color: var(--colorMainGreen);
+  color: rgb(252, 243, 243);
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  letter-spacing: 1px;
+  transition: background-color, color 1s 0s linear;
+}
+.boxs-button button:hover {
+  background-color: brown;
+  color: blue;
+}
+.boxs-button p {
+  font: 700 16px var(--colorSecondFont);
+  color: var(--colorMainBlack);
+  line-height: 24px;
+}
+.view-more {
+  color: #fff;
+  padding: 20px 30px;
+  background-color: var(--colorMainBlack);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 1s linear;
+}
+.view-more:hover {
+  transform: scale(0.95, 0.95);
+}
+.background {
+  height: 156px;
+  width: 100%;
+  background-image: url(/assets/image/background-image.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section7 {
+  margin: 0 56px 130px 56px;
+}
+.section7-container {
+  display: flex;
+}
+.last-leftSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 40px;
+}
+.last-imageSection {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+.last-title {
+  font: 900 48px var(--colorSecondFont);
+  color: var(--colorMainBlack);
+  line-height: 64px;
+  margin-bottom: 24px;
+  padding: 10px;
+}
+.last-description {
+  font: 400 20px var(--colorSecondFont);
+  color: var(--colorMainBlack);
+  line-height: 26px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+.last-imageSection img {
+  width: 100%;
+}
+.last-button {
+  border-radius: 8px;
+  padding: 20px 24px;
+  background-color: var(--colorMainGreen);
+  color: #ffff;
+  font: 400 16px var(--colorSecondFont);
+  cursor: pointer;
+  box-shadow: 0 0 10px 0.5px var(--colorMainGreen);
+  transition: transform 1s linear;
+}
+.last-button:hover {
+  transform: scale(0.95, 0.95);
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 56px 44px 56px;
+}
+.footer-left {
+  font: 700 24px var(--colorMainFont);
+  line-height: 32.68px;
+  letter-spacing: -4%;
+  color: var(--colorMainBlack);
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+.footer-list {
+  display: flex;
+}
+.footer-list li:not(:last-child) a {
+  font: 400 20px var(--colorSecondFont);
+  color: var(--colorMainBlack);
+  line-height: 24.36px;
+  margin-right: 40px;
+  transition: color 0.5s 0s linear;
+}
+.footer-list li:last-child a {
+  padding: 10px;
+  font: 700 20px var(--colorMainFont);
+  color: var(--colorMainGreen);
+  background-color: #fff;
+  line-height: 24.36px;
+  transition: background-color, color 2s 0s linear;
+}
+.footer-list li:not(:last-child) a:hover {
+  color: var(--colorMainGreen);
+}
+.footer-list li:last-child a:hover {
+  background-color: var(--colorMainGreen);
+  color: #fff;
 }
